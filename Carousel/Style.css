@@ -1,0 +1,72 @@
+html {
+  color-scheme: dark;
+  font-family: system-ui;
+}
+
+.carousel {
+  list-style: none;
+  margin: 5rem;
+  padding: 1rem;
+  border: 5px solid white;
+
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 40%;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+
+  anchor-name: --carousel;
+
+  scroll-marker-group: after;
+
+  &::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  > li {
+    scroll-snap-align: center;
+
+    &::scroll-marker {
+      content: " ";
+      width: 20px;
+      height: 20px;
+      aspect-ratio: 1 / 1;
+      border-radius: 100%;
+      border: 2px solid CanvasText;
+    }
+
+    &::scroll-marker:target-current {
+      background: LinkText;
+    }
+  }
+
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    margin: 1rem;
+    font: inherit;
+    background: dodgerblue;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  &::scroll-button(right) {
+    content: "right";
+    position-area: center right;
+  }
+
+  &::scroll-button(left) {
+    content: "left";
+    position-area: center left;
+  }
+}
