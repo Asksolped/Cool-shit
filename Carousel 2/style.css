@@ -1,0 +1,275 @@
+.carousel[data-astro-cid-rp2fxbvr] {
+  list-style-type: none;
+  container-type: size;
+  inline-size: 100cqi;
+  block-size: min(60svh, 720px);
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  gap: 1rem;
+  padding-inline: 1rem;
+  scroll-padding-inline: 1rem;
+  padding-block: 30px 60px;
+  margin-block-end: var(--size-7);
+}
+
+.hidden {
+  order: 100;
+  background: none;
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(1) {
+      order: 10;
+      z-index: 1;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(9) {
+      order: 2;
+      z-index: 9;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(8) {
+      order: 3;
+      z-index: 8;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(7) {
+      order: 4;
+      z-index: 7;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(6) {
+      order: 5;
+      z-index: 6;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(5) {
+      order: 6;
+      z-index: 5;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(4) {
+      order: 7;
+      z-index: 4;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(3) {
+      order: 8;
+      z-index: 3;
+    }
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & > .item {
+    &:nth-child(2) {
+      order: 9;
+      z-index: 2;
+    }
+  }
+}
+.carousel[data-astro-cid-rp2fxbvr] {
+  > .item {
+    scroll-snap-align: start;
+  }
+}
+
+:where(li) {
+  padding-inline-start: var(--size-2);
+}
+
+:where(:not(fieldset, progress, meter)) {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 0;
+}
+
+:where(:not(dialog)) {
+  margin: 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+:where(li, dd, figcaption) {
+  max-inline-size: var(--size-content-2);
+}
+
+.carousel {
+  > * {
+    container-type: scroll-state;
+    scroll-snap-align: start;
+  }
+}
+
+.carousel {
+  ul& {
+    padding-inline-start: 0;
+  }
+}
+
+.scroll-buttons {
+  &:where(:not(.--vertical), .--bidi) {
+  }
+}
+
+.scroll-buttons {
+}
+
+.carousel {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+.carousel {
+  scrollbar-width: none;
+  anchor-name: --carousel;
+  container-type: inline-size scroll-state;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+:where(ol, ul) {
+  padding-inline-start: var(--size-8);
+}
+
+:where(p, ul, ol, dl, h6) {
+  font-size: var(--font-size-2);
+}
+
+:where(:not(fieldset, progress, meter)) {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 0;
+}
+
+:where(:not(dialog)) {
+  margin: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & figure {
+    flex-shrink: 0;
+    block-size: 100cqb;
+    aspect-ratio: 9 / 16;
+    /* background: light-dark(#ccc, #444); */ /* for testing only */
+    box-shadow: var(--shadow-5);
+    border-radius: 20px;
+    overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  & figure {
+    @supports (animation-timeline: view()) {
+      @media (prefers-reduced-motion: no-preference) {
+        animation: slide-in linear both;
+        animation-timeline: view(x);
+        animation-range: cover -75cqi contain 20cqi;
+      }
+    }
+  }
+}
+
+:where(figure) {
+  display: grid;
+  gap: var(--size-2);
+  place-items: center;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate(-100cqi) scale(0.75);
+  }
+}
+
+.carousel[data-astro-cid-rp2fxbvr] {
+  &::scroll-button(*) {
+    z-index: 20;
+    background: oklch(from var(--surface-1) l c h / 50%);
+    backdrop-filter: blur(10px);
+  }
+}
+
+→ ul.carousel.scroll-buttons .scroll-buttons {
+  &:where(:not(.--vertical), .--bidi) {
+    @container (inline-size >= calc(100cqi - 120px)) {
+      &::scroll-button(right),
+      &::scroll-button(left) {
+        position-area: var(--_inner);
+      }
+    }
+  }
+}
+
+.scroll-buttons {
+  &:where(:not(.--vertical), .--bidi) {
+    &::scroll-button(right) {
+      --_inner: center span-inline-start;
+      --_inner-under: block-end span-inline-start;
+      --_inner-over: block-start span-inline-start;
+      --_outer: inline-end center;
+      --_outer-under: end;
+      --_outer-over: block-start inline-end;
+      position-area: var(--_outer);
+      content: "arrow_forward" / "Scroll Right";
+    }
+  }
+}
